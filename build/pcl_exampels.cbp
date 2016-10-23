@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="pcl_exampels" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\share\;CMake Files\..\..\..\..\usr\share\pcl-1.7\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\vtk-5.8\;CMake Files\..\..\..\..\usr\lib\vtk-5.8\CMake\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/bobo/code/PCL_samples/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/bobo/code/PCL_samples/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="icp">
+         <Option output="/home/bobo/code/PCL_samples/bin/icp" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/PCL_samples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add directory="/home/bobo/code/PCL_samples/include" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/pcl-1.7" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/local/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 icp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="icp/fast">
+         <Option output="/home/bobo/code/PCL_samples/bin/icp" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/PCL_samples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add directory="/home/bobo/code/PCL_samples/include" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/pcl-1.7" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/local/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 icp/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="interactive_icp">
+         <Option output="/home/bobo/code/PCL_samples/bin/interactive_icp" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/PCL_samples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add directory="/home/bobo/code/PCL_samples/include" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/pcl-1.7" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/local/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 interactive_icp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="interactive_icp/fast">
+         <Option output="/home/bobo/code/PCL_samples/bin/interactive_icp" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/PCL_samples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add directory="/home/bobo/code/PCL_samples/include" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/pcl-1.7" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/local/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 interactive_icp/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/PCL_samples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/bobo/code/PCL_samples/src/interactive_icp.cpp">
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/src/iterative_closest_point.cpp">
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/share/pcl-1.7/PCLConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\share\pcl-1.7\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/share/pcl-1.7/PCLConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\share\pcl-1.7\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKTargets-release.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/UseVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/UseVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/PCL_samples/../../../../usr/lib/vtk-5.8/CMake/vtkMakeInstantiator.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\CMake\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

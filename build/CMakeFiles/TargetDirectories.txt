@@ -1,0 +1,2 @@
+/home/bobo/code/PCL_samples/build/src/CMakeFiles/icp.dir
+/home/bobo/code/PCL_samples/build/src/CMakeFiles/interactive_icp.dir

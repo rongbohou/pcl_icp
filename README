@@ -1,0 +1,23 @@
+#pcl_icp
+**Authors:** rongbohou, email:rongbohou@163.com
+
+#Prerequisites#######################################################
+install PCL
+
+build################################################################
+
+mkdir build ＆＆ cd build 
+cmake  .. 
+make 
+##### Usage #################
+./bin/interactive_icp ./data/ism_test.pcd
+
+press "space",use one iteration ICP to align two pointcloud
+
+
+## reference:
+
+PCL tutorial: http://www.pointclouds.org/documentation/tutorials/index.php
+              http://www.pointclouds.org/documentation/
+  API：       http://docs.pointclouds.org/trunk/modules.html
+
